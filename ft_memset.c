@@ -12,15 +12,27 @@
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*i;
+	char	*p;
 
-	i = str;
-	while (n > 0)
+	p = (char *)b;
+	while (len > 0)
 	{
-		*i = c;
-		i++;
-		n--;
+		p[len - 1] = c;
+		len--;
 	}
-	return (str);
+	return (b);
+}
+
+int main () {
+   char str[50];
+
+   strcpy(str,"abcdefg");
+   puts(str);
+
+   memset(str,'$',2);
+   puts(str);
+   
+   return(0);
+}
