@@ -6,16 +6,16 @@
 /*   By: adunne <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 15:56:04 by adunne            #+#    #+#             */
-/*   Updated: 2022/02/21 15:56:07 by adunne           ###   ########.fr       */
+/*   Updated: 2022/03/01 13:53:11 by adunne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return (0);
-    else
-        return (1);
+	if (c >= 32 && c <= 126)
+		return (0);
+	else
+		return (1);
 }

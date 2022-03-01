@@ -6,18 +6,20 @@
 /*   By: adunne <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 14:48:47 by adunne            #+#    #+#             */
-/*   Updated: 2022/02/21 14:48:52 by adunne           ###   ########.fr       */
+/*   Updated: 2022/03/01 13:51:24 by adunne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int isalpha(int c)
+int	isalpha(int c)
 {
-    if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
-    {
-        return (1);
-    }
-    else 
-        return (0);
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

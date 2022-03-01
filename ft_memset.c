@@ -24,15 +24,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-int main () {
-   char str[50];
-
-   strcpy(str,"abcdefg");
-   puts(str);
-
-   memset(str,'$',2);
-   puts(str);
-   
-   return(0);
-}

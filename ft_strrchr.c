@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-char *strchr(const char *s, int c)
+char	*strchr(const char *s, int c)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -28,17 +28,4 @@ char *strchr(const char *s, int c)
 		i--;
 	}
 	return (0);
-}
-
-
-int main () {
-   const char str[] = "www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-   ret = strchr(str, ch);
-
-   printf("String after '%c' is '%s'\n", ch, ret);
-   
-   return (0);
 }
